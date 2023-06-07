@@ -1,0 +1,8 @@
+viewport, user visible area, it varies device to device
+
+ASCII first character encoding standard
+to display a web page a browser must know its character set used in the page
+uTF 8 cover all the characters and symbols in the world
+
+ie-edge x-us-compatible when open in ms edge then maintain maximum campatibility
+URL - uniform resource locator

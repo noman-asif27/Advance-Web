@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tables</title>
+    <style>
+      table {
+        /* font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+        width: 100%;
+      }
+
+      td,
+      th {
+        border: 1px solid #222;
+        text-align: left;
+        padding: 8px;
+      }
+
+      tr:nth-child(even) {
+        background-color: #dddddd;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Student Table</h1>
+    <table>
+      <tr>
+        <th>Sr. #</th>
+        <th>Roll #</th>
+        <th>Name</th>
+        <th>Image</th>
+        <th>Class</th>
+          <tr>
+            <td>1</td>
+            <td>1265</td>
+            <td>Abc</td>
+            <td><img width="50" src="https://source.unsplash.com/random/900×700/?user" alt="user"></td>
+            <td>Web</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>13865</td>
+            <td>Xyz</td>
+            <td><img width="50" src="https://source.unsplash.com/random/900×700/?person" alt="user"></td>
+            <td>Web</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>767767</td>
+            <td>asz</td>
+            <td><img width="50" src="https://source.unsplash.com/random/900×700/?avatar" alt="user"></td>
+            <td>Cyber</td>
+          </tr>
+      
+    </table>
+    <h1>Student Table Vertical and ColGroup</h1>
+    <table style="border-radius: 20px;border-collapse: collapse;">
+          <tr>
+            <colgroup>
+                <col span="1" style="background-color: #dddddd">
+              </colgroup>
+            <th>Roll #</th>    
+            <td>1265</td>
+            <td>13865</td>
+            <td>767767</td>
+            
+          </tr>
+          <tr >
+            <th >Name</th>
+            <td style="background-color: #fff;">Abc</td>
+            <td style="background-color: #fff;">asz</td>
+            <td style="background-color: #fff;">Xyz</td>
+            
+          </tr>
+          <tr>
+            <th>Image</th>
+            <td><img width="50" src="https://source.unsplash.com/random/900×700/?user" alt="user"></td>
+            <td><img width="50" src="https://source.unsplash.com/random/900×700/?person" alt="user"></td>
+            <td><img width="50" src="https://source.unsplash.com/random/900×700/?avatar" alt="user"></td>
+          </tr>
+          <tr>
+            <th>Class</th>
+            <td style="background-color: #fff;">Web</td>
+            <td style="background-color: #fff;">Web</td>
+            <td style="background-color: #fff;">Cyber</td>
+          </tr>
+      
+    </table>
+    <h1>Student Table with Collapsed</h1>
+    <table style="border-radius: 20px;border-collapse: collapse;">
+      <tr >
+        <th >Sr. #</th>
+        <th>Roll #</th>
+        <th>Name</th>
+        <th>Image</th>
+        <th>Class</th>
+          <tr>
+            <td>1</td>
+            <td>1265</td>
+            <td>Abc</td>
+            <td><img width="50" src="https://source.unsplash.com/random/900×700/?user" alt="user"></td>
+            <td>Web</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>13865</td>
+            <td>Xyz</td>
+            <td><img width="50" src="https://source.unsplash.com/random/900×700/?person" alt="user"></td>
+            <td>Web</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>767767</td>
+            <td>asz</td>
+            <td><img width="50" src="https://source.unsplash.com/random/900×700/?avatar" alt="user"></td>
+            <td>Cyber</td>
+          </tr>
+      
+    </table>
+    <h1>Student Table with padding, spacing</h1>
+    <table style="border:3px dotted black; border-spacing: 20px;">
+      <tr  >
+        <th style="padding:20px">Sr. #</th>
+        <th>Roll #</th>
+        <th>Name</th>
+        <th>Image</th>
+        <th>Class</th>
+          <tr>
+            <td style="padding:30px">1</td>
+            <td>1265</td>
+            <td>Abc</td>
+            <td><img width="50" src="https://source.unsplash.com/random/900×700/?user" alt="user"></td>
+            <td>Web</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>13865</td>
+            <td>Xyz</td>
+            <td style="padding:20px"><img width="50" src="https://source.unsplash.com/random/900×700/?person" alt="user"></td>
+            <td>Web</td>
+          </tr>
+          <tr>
+            <td style="padding:20px">3</td>
+            <td>767767</td>
+            <td>asz</td>
+            <td><img width="50" src="https://source.unsplash.com/random/900×700/?avatar" alt="user"></td>
+            <td>Cyber</td>
+          </tr>
+      
+    </table>
+    <h1>Student Table with RowSpan, ColSpan</h1>
+    <table>
+      <tr>
+        <th>Sr. #</th>
+        <th>Roll #</th>
+        <th colspan="2">Name and Image</th>
+        <th>Class</th>
+          <tr>
+            <td>1</td>
+            <td>1265</td>
+            <td>Abc</td>
+            <td><img width="50" src="https://source.unsplash.com/random/900×700/?user" alt="user"></td>
+            <td>Web</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>13865</td>
+            <td>Xyz</td>
+            <td><img width="50" src="https://source.unsplash.com/random/900×700/?person" alt="user"></td>
+            <td>Web</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>767767</td>
+            <td>asz</td>
+            <td><img width="50" src="https://source.unsplash.com/random/900×700/?avatar" alt="user"></td>
+            <td>Cyber</td>
+          </tr>
+      
+    </table>
+  </body>
+</html>
+

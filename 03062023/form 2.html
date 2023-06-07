@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <style>
+    html,
+    body {
+      height: 100%;
+    }
+
+    html {
+      display: table;
+      margin: auto;
+    }
+
+    body {
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      width: 100%;
+      align-items: center;
+      height: 100vh;
+      margin: 0 auto !important;
+      display: table-cell;
+      vertical-align: middle;
+      background-color: #E5F3F3;
+
+    }
+
+    .container {
+      width: 600px;
+      box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    }
+
+    form {
+      border: 1px solid gainsboro;
+      padding: 10px;
+
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+
+
+    }
+
+    table td {
+      padding: 8px;
+      border: 0px solid #ddd;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="password"],
+    input[type="number"],
+    select {
+      width: 100%;
+      padding: 8px;
+      box-sizing: border-box;
+    }
+
+    h2 {
+      text-align: center;
+    }
+
+    .left {
+      text-align: left;
+    }
+
+    .right {
+      text-align: right;
+    }
+
+    input[type="submit"] {
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      cursor: pointer;
+    }
+
+    input[type="submit"]:nth-child(2) {
+      background-color: red;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      cursor: pointer;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #2e5c31;
+    }
+
+    input[type="submit"]:nth-child(2):hover {
+      background-color: rgb(167, 40, 40);
+    }
+
+    small {
+      color: red;
+      font-size: 11px;
+    }
+
+    .allFieldsOfEdu {
+      display: flex;
+      justify-content: space-between;
+      margin: 1%;
+      border: 1px solid gainsboro;
+    }
+
+    .allFieldsOfEdu>input {
+      margin: 1.5%;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div style="text-align: center;">
+      <img src="https://online.umt.edu.pk/img/UMT_Logo.png" alt="logo" width="100" />
+    </div>
+
+    <form>
+      <h2>Student Registration Form</h2>
+      <table>
+        <tr>
+          <td class="left">First Name:</td>
+          <td class="left">Last Name:</td>
+        </tr>
+        <tr>
+          <td style="width: 250px;"><input placeholder="Enter your First Name" type="text" name="firstName" required></td>
+          <td><input placeholder="Enter your last Name" type="text" name="lastName" required></td>
+        </tr>
+        <tr>
+          <td class="left" colspan="2">Father Name:</td>
+        </tr>
+        <tr>
+          <td colspan="2"><input placeholder="Enter your Father Name" type="text" name="fatherName" required></td>
+        </tr>
+        <tr>
+          <td class="left" colspan="2">Country:</td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <select name="qualificationList">
+              <option value="">Select Your Country</option>
+              <option value="pakistan">Pakistan</option>
+              <option value="india">India</option>
+              <option value="bangladesh">BanglaDesh</option>
+              <option value="canada">Canada</option>
+              <option value="usa">United state of America</option>
+              <option value="uae">United arab emirates</option>
+              <option value="ksa">Kingdom of Saudi Arabia</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td class="left" colspan="2">Mobile Number: <small>eg: 923224895195</small></td>
+        </tr>
+        <tr>
+          <td colspan="2"><input placeholder="Enter your Mobile Number" type="number" name="mobileNumber" required></td>
+        </tr>
+        <tr>
+          <td class="left" colspan="2">CNIC Number: <small>eg: 12356-6341651-5</small></td>
+
+        </tr>
+        <tr>
+          <td colspan="2"><input placeholder="Enter your CNIC Number" type="text" name="idNumber" required></td>
+        </tr>
+        <tr>
+          <td class="left" colspan="2">Email:</td>
+        </tr>
+        <tr>
+          <td colspan="2"><input placeholder="Enter your email" type="email" name="email" required></td>
+        </tr>
+        <tr>
+          <td class="left" colspan="2">Password: <small>must be 8 digit </small></td>
+        </tr>
+        <tr>
+          <td colspan="2"><input placeholder="Enter your password" type="password" name="password" required></td>
+        </tr>
+        <tr>
+          <td class="left" colspan="2">Gender:</td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <input type="radio" name="gender" value="male" required checked> Male
+            <input type="radio" name="gender" value="female"> Female
+          </td>
+        </tr>
+        <tr>
+          <td class="left" colspan="2">Education: <small>Fill all fields </small></td>
+        </tr>
+        <tr style="border:1px solid #ddd">
+          <td style="border:1px solid #ddd">Graduate:</td>
+          <td>
+            <div class="allFieldsOfEdu">
+              <input style="width: 250px;" placeholder="University Name" type="text" name="university" required>
+              <input placeholder="Marks Obtained" type="text" name="marksObtained" required>
+              <input placeholder="from Marks" type="text" name="fromMarks" required>
+          </td>
+  </div>
+  </tr>
+  <tr style="border:1px solid #ddd">
+    <td style="border:1px solid #ddd">Intermediate:</td>
+    <td>
+      <div class="allFieldsOfEdu">
+        <input style="width: 250px;" placeholder="College Name" type="text" name="university" required>
+        <input placeholder="Marks Obtained" type="text" name="marksObtained" required>
+        <input placeholder="from Marks" type="text" name="fromMarks" required>
+    </td>
+    </div>
+  </tr>
+  <tr style="border:1px solid #ddd">
+    <td style="border:1px solid #ddd">Matric:</td>
+    <td>
+      <div class="allFieldsOfEdu">
+        <input style="width: 250px;" placeholder="School Name" type="text" name="university" required>
+        <input placeholder="Marks Obtained" type="text" name="marksObtained" required>
+        <input placeholder="from Marks" type="text" name="fromMarks" required>
+    </td>
+    </div>
+  </tr>
+  <tr>
+    <td class="left" colspan="2">Qualification:</td>
+  </tr>
+  <tr>
+    <td colspan="2">
+      <input type="radio" name="qualification" value="highSchool" required> High School
+      <input type="radio" name="qualification" value="college" checked> College
+      <input type="radio" name="qualification" value="university"> University
+    </td>
+  </tr>
+  <tr>
+    <td class="left" colspan="2">Subject Type:</td>
+  </tr>
+  <tr>
+    <td colspan="2">
+      <select name="qualificationList">
+        <option value="">Select Subject</option>
+        <option value="math">Math</option>
+        <option value="science">Science</option>
+        <option value="english">English</option>
+        <option value="history">History</option>
+      </select>
+    </td>
+  </tr>
+  <tr>
+    <td class="left">
+      <input type="submit" value="Register">
+      <input type="submit" value="Reset">
+    </td>
+  </tr>
+  </table>
+  </form>
+  </div>
+</body>
+
+</html>
