@@ -1,0 +1,12 @@
+.text-container{
+text-align:center;
+margin-top:80px;
+}
+
+#myText:hover{
+  cursor: pointer; 
+}
+#myText:active {
+  color: red;
+ cursor: pointer;
+}

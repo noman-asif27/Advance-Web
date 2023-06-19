@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Task 6 - Form</title>
+
+  <style>
+    html,
+    body {
+      height: 100%;
+      background-image: url('https://www.umt.edu.pk/images/home-page-video-section.jpeg');
+      background-attachment: fixed;
+      background-size: cover;
+      background-position: center;
+    }
+
+    html {
+      display: table;
+      margin: auto;
+    }
+
+    body {
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      width: 100%;
+      align-items: center;
+      height: 100vh;
+      margin: 0 auto !important;
+      display: table-cell;
+      vertical-align: middle;
+      background-color: #E5F3F3;
+
+    }
+
+    .container {
+      width: 600px;
+      box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+      padding: 10px;
+      background-color: rgba(61, 142, 223, 0.904);
+    }
+
+    form {
+      /* border: 1px solid gainsboro; */
+      padding: 10px;
+      /* background-color: rgba(73, 155, 238, 0.904); */
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    table td {
+      padding: 8px;
+      border: 0px solid #ddd;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="password"],
+    input[type="number"],
+    select {
+      width: 100%;
+      padding: 8px;
+      box-sizing: border-box;
+    }
+
+    h2 {
+      text-align: center;
+    }
+
+    .left {
+      text-align: left;
+    }
+
+    .right {
+      text-align: right;
+    }
+
+    input[type="submit"] {
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      cursor: pointer;
+    }
+
+    input[type="submit"]:nth-child(2) {
+      background-color: red;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      cursor: pointer;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #2e5c31;
+    }
+
+    input[type="submit"]:nth-child(2):hover {
+      background-color: rgb(167, 40, 40);
+    }
+
+    small {
+      color: red;
+      font-size: 11px;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Task 6 -->
+
+  <!-- Make a webpage with image as a Background and
+  when we scroll this webpage, the image stays fix and
+  only the top of the webpage scrolls.
+  6 Make a complete html
+  form
+  Make the following Report Form (The Country
+  Dropdown
+  List must contain 7 Countries in Ascending Order but
+  when form is loaded, by default Pakistan is Selected. -->
+
+  <div class="container">
+    <div style="text-align: center;">
+      <img src="https://online.umt.edu.pk/img/UMT_Logo.png" alt="logo" width="100" />
+    </div>
+
+    <form>
+      <h2>Student Registration Form</h2>
+      <table>
+        <tr>
+          <td class="left">First Name:</td>
+          <td class="left">Last Name:</td>
+        </tr>
+        <tr>
+          <td><input placeholder="Enter your First Name" type="text" name="firstName" required></td>
+          <td><input placeholder="Enter your last Name" type="text" name="lastName" required></td>
+        </tr>
+        <tr>
+          <td class="left" colspan="2">Father Name:</td>
+        </tr>
+        <tr>
+          <td colspan="2"><input placeholder="Enter your Father Name" type="text" name="fatherName" required></td>
+        </tr>
+        <tr>
+          <td class="left" colspan="2">Country:</td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <select name="qualificationList">
+              <option value="">Select Your Country</option>
+              <option value="australia">Australia</option>
+              <option value="bangladesh">BanglaDesh</option>
+              <option value="canada">Canada</option>
+              <option value="india">India</option>
+              <option value="pakistan" selected>Pakistan</option>
+              <option value="usa">United state of America</option>
+              <option value="uae">United arab emirates</option>
+              <option value="ksa">Kingdom of Saudi Arabia</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td class="left" colspan="2">Mobile Number: <small>eg: 923224895195</small></td>
+        </tr>
+        <tr>
+          <td colspan="2"><input placeholder="Enter your Mobile Number" type="number" name="mobileNumber" required></td>
+        </tr>
+        <tr>
+          <td class="left" colspan="2">CNIC Number: <small>eg: 12356-6341651-5</small></td>
+
+        </tr>
+        <tr>
+          <td colspan="2"><input placeholder="Enter your CNIC Number" type="text" name="idNumber" required></td>
+        </tr>
+        <tr>
+          <td class="left" colspan="2">Email:</td>
+        </tr>
+        <tr>
+          <td colspan="2"><input placeholder="Enter your email" type="email" name="email" required></td>
+        </tr>
+        <tr>
+          <td class="left" colspan="2">Password: <small>must be 8 digit </small></td>
+        </tr>
+        <tr>
+          <td colspan="2"><input placeholder="Enter your password" type="password" name="password" required></td>
+        </tr>
+        <tr>
+          <td class="left" colspan="2">Gender:</td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <input type="radio" name="gender" value="male" required checked> Male
+            <input type="radio" name="gender" value="female"> Female
+          </td>
+        </tr>
+
+        <tr>
+          <td class="left" colspan="2">Qualification:</td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <input type="radio" name="qualification" value="highSchool" required> High School
+            <input type="radio" name="qualification" value="college" checked> College
+            <input type="radio" name="qualification" value="university"> University
+          </td>
+        </tr>
+        <tr>
+          <td class="left" colspan="2">Subject Type:</td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <select name="qualificationList">
+              <option value="">Select Subject</option>
+              <option value="math">Math</option>
+              <option value="science">Science</option>
+              <option value="english">English</option>
+              <option value="history">History</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="0" class="left">
+            <input type="submit" value="Register">
+            <input type="submit" value="Reset">
+          </td>
+        </tr>
+      </table>
+    </form>
+  </div>
+</body>
+</html>
