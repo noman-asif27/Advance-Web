@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task 20 - Javascript Switch statement</title>
+  </head>
+  <body>
+    <!-- Task 20 -->
+
+    <!-- Use the switch statement to display “today is (whatever day it is)” 
+      according to the current day. -->
+
+    <h1 id="disp"></h1>
+
+    <script>
+      // Get the current date
+      var currentDate = new Date();
+      var currentDay = currentDate.getDay();
+
+      // console.log(currentDay);
+
+      // Define the day names
+      var dayNames = [
+        "Sunday",
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday",
+      ];
+
+      // Display the current day
+      switch (currentDay) {
+        case 0:
+          document.getElementById("disp").innerHTML = "Today is " + dayNames[0];
+          break;
+        case 1:
+          document.getElementById("disp").innerHTML = "Today is " + dayNames[1];
+          break;
+        case 2:
+          document.getElementById("disp").innerHTML = "Today is " + dayNames[2];
+          break;
+        case 3:
+          document.getElementById("disp").innerHTML = "Today is " + dayNames[3];
+          break;
+        case 4:
+          document.getElementById("disp").innerHTML = "Today is " + dayNames[4];
+          break;
+        case 5:
+          document.getElementById("disp").innerHTML = "Today is " + dayNames[5];
+          break;
+        case 6:
+          document.getElementById("disp").innerHTML = "Today is " + dayNames[6];
+          break;
+        default:
+          document.getElementById("disp").innerHTML =
+            "Error: SOmething goes wrong";
+          break;
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task 21 - Javascript For Loop statement</title>
+  </head>
+  <body>
+    <!-- Task 21 -->
+
+    <!-- Use of loop to display a string of all the names of months 
+      using JS functions and variables. -->
+
+    <h1 id="disp"></h1>
+
+    <script>
+
+      var monthNames = [
+        "January",
+        "February",
+        "March",
+        "April",
+        "May",
+        "June",
+        "July",
+        "August",
+        "September",
+        "October",
+        "November",
+        "December",
+      ];
+
+      var allMonthNames = "";
+      for (let name of monthNames) {
+          allMonthNames += name + ", ";
+        }
+      document.getElementById("disp").innerHTML = allMonthNames;
+    </script>
+  </body>
+</html>

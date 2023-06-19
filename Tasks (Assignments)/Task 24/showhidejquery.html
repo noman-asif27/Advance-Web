@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task 24 - Jquery Show Hide</title>
+    
+    
+    <script
+      src="https://code.jquery.com/jquery-3.7.0.min.js"
+      integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
+      crossorigin="anonymous"
+    ></script>
+
+    
+    <style>
+      #myParagraph {
+        display: block;
+      }
+      .hidden {
+        display: none!important;
+      }
+      button{
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Task 24 -->
+
+    <!-- Make a paragraph line and two buttons named “hide” and “show” using HTML and hide the paragraph 
+      if the button “hide” is clicked, and show the paragraph if the button “show” is clicked. -->
+
+    <p id="myParagraph">This is a paragraph that can be hidden or shown.</p>
+
+    <button id="hideButton">Hide</button>
+    <button id="showButton">Show</button>
+
+    <script>
+      $(document).ready(function () {
+        $("#hideButton").click(function () {
+          $("#myParagraph").addClass("hidden");
+        });
+
+        $("#showButton").click(function () {
+          $("#myParagraph").removeClass("hidden");
+        });
+      });
+    </script>
+   
+  </body>
+</html>
