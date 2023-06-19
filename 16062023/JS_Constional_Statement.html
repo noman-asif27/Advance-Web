@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Conditional Statement</title>
+  </head>
+  <body>
+    <script>
+      let hour = 12;
+      if (hour > 6 && hour <= 12) {
+        console.log("Good Morning");
+      } else if (hour > 13 && hour <= 18) {
+        console.log("Good Afternoon");
+      } else {
+        console.log("Good Night");
+      }
+    </script>
+    <script>
+      
+        let marks = [80, 85, 50];
+      let sum = 0;
+      
+      function calculateAverge(){
+        for (let mark of marks) {
+          sum += mark;
+        }
+        let average = sum / marks.length;
+          return average
+      }
+      function calculateGrade(avg = calculateAverge()) {
+          if (avg < 60) return "F";
+          if (avg < 70) return "D";
+          if (avg < 80) return "C";
+          if (avg < 90) return "B";
+          return "A";
+        
+      }
+      
+      console.log(calculateAverge())
+      console.log(calculateGrade());
+    </script>
+  </body>
+</html>
