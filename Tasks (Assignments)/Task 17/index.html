@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Task 17 - Bootstrap Website</title>
+
+
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet">
+
+  <link href="https://bootstrapmade.com/assets/vendor/aos/aos.css" rel="stylesheet">
+  
+  <link href="https://bootstrapmade.com/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- Task 17 -->
+
+  <!-- Make 3 pages of home page, admission form, and about
+us page using bootstrap classes with navigation bars,
+headers, footers and forms. -->
+  <header id="header" class="fixed-top d-flex align-items-center">
+    <div class="container d-flex align-items-center">
+      <h1 class="logo me-auto"><a href="index.html">My University<span>.</span></a></h1>
+      <nav id="navbar" class="navbar order-last order-lg-0">
+        <ul>
+          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+          <li><a class="nav-link scrollto " href="#pricing">Fee</a></li>
+
+          <li><a class="nav-link scrollto" href="admission.html">Admission</a></li>
+          <li><a class="nav-link scrollto" href="about.html">About US</a></li>
+        </ul>
+        <i class="bi mobile-nav-toggle bi-list"></i>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="hero" class="d-flex align-items-center">
+
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-6">
+          <h1 class="text-light">Be a Coding Ninja</h1>
+          <h2>50,000 Students from 300 colleges have trusted us</h2>
+          <a href="#about" class="btn-get-started scrollto">Learn More</a>
+        </div>
+      </div>
+    </div>
+
+  </section>
+  <!-- Fee Section -->
+
+  <section id="pricing" class="pricing section-bg">
+    <div class="container aos-init aos-animate" data-aos="fade-up">
+
+      <div class="section-title text-dark">
+        <h2>Fee Structure</h2>
+        <p>Courses to get you started</p>
+      </div>
+
+      <div class="row">
+
+        <div class="col-lg-4 col-md-6">
+          <div class="box featured aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
+            <h3><i class='text-warning bx bx-fade-left bxs-right-arrow'></i> React Js <i class='text-warning bx bx-fade-right bxs-left-arrow'></i></h3>
+            <h4><sup>$</sup>59<span> / month</span></h4>
+            <ul>
+              <li> Live Interactive Learning</li>
+              <li>Lifetime Access</li>
+              <li>Hands-On Project Based Learning</li>
+              <li >Industry Recognised Certification</li>
+              <li >24x7 Support</li>
+            </ul>
+            <div class="btn-wrap">
+              <a href="./admission.html" class="btn-buy">Buy Now</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mt-4 mt-md-0">
+          <div class="box featured aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">
+            <h3><i class='text-success bx bx-fade-left bxs-right-arrow'></i> NODE JS<i class='text-success bx bx-fade-right bxs-left-arrow'></i></h3>
+            <h4><sup>$</sup>69<span> / month</span></h4>
+            <ul>
+              <li>Build RESTful APIs using Node and Express.js</li>
+              <li>Store and retrieve data using Mongoose</li>
+              <li>Handle authentication and authorization</li>
+              <li>Manage configuration settings and environment-specific variables</li>
+              <li >Deploy your Node applications</li>
+            </ul>
+            <div class="btn-wrap">
+              <a href="./admission.html" class="btn-buy">Buy Now</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mt-4 mt-lg-0">
+          <div class="box featured aos-init aos-animate" data-aos="fade-up" data-aos-delay="300">
+            <h3><i class='text-info bx bx-fade-left bxs-right-arrow'></i>PHP & SQL<i class='text-info bx bx-fade-right bxs-left-arrow'></i></h3>
+            <h4><sup>$</sup>79<span> / month</span></h4>
+            <ul>
+              <li>Basic PHP Syntax</li>
+              <li>Working with Numbers</li>
+              <li>Working with Strings</li>
+              <li>Sending Email</li>
+              <li>Creating a Database/MySQL/SELECT</li>
+            </ul>
+            <div class="btn-wrap">
+              <a href="./admission.html" class="btn-buy">Buy Now</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+
+  <footer id="footer">
+
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-4 col-md-6 footer-contact">
+            <h3>My University<span>.</span></h3>
+            <p>
+              Model Town Extension <br>
+              
+              Lahore <br><br>
+              <strong>Phone:</strong> +92 322 4895 195<br>
+              <strong>Email:</strong> info@example.com<br>
+            </p>
+          </div>
+
+          <div class="col-lg-4 col-md-6 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-4 col-md-6 footer-newsletter">
+            <h4>Join Our Newsletter</h4>
+            <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
+            <form action="" method="post">
+              <input type="email" name="email"><input type="submit" value="Subscribe">
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container d-md-flex py-4">
+
+      <div class="me-md-auto text-center text-md-start">
+        <div class="copyright">
+          © Copyright <strong><span>Noman</span></strong>. All Rights Reserved
+        </div>
+        
+      </div>
+      <div class="social-links text-center text-md-end pt-3 pt-md-0">
+        <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+        <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+        <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+        <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+        <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
