@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Task 30 - Using JQuery
+  </title>
+
+  <style>
+    /* CSS styles for the page */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+      padding: 20px;
+    }
+
+    .container {
+      max-width: 500px;
+      margin: 0 auto;
+      background-color: #ffffff;
+      padding: 40px;
+      border-radius: 5px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      text-align: center;
+      color: #333333;
+    }
+
+    button {
+      display: block;
+      margin: 20px auto;
+      padding: 10px 20px;
+      font-size: 16px;
+      background-color: #4caf50;
+      color: #ffffff;
+      border: none;
+      border-radius: 3px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #45a049;
+    }
+
+    p {
+      text-align: center;
+      color: #666666;
+      font-size: 18px;
+      text-align: justify;
+    }
+  </style>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+
+</head>
+
+<body>
+  <!-- Task 30 -->
+
+  <!--Create a web page that includes a button and a paragraph
+element. When the button is clicked, use jQuery to change
+the text of the paragraph to a predefined message.
+
+ -->
+
+  <div class="container">
+    <h1>Change The Paragraph with JQuery when Button Clicked</h1>
+    <button id="myButton">Click Me To Change Below Paragraph</button>
+    <p id="myParagraph">voluptas commodi sapiente incidunt reprehenderit animi repellendus non debitis facilis
+      aspernatur temporibus illo quia optio sunt voluptatum nam dolores autem, cum, ab quibusdam. Adipisci id,
+      architecto autem nulla accusantium voluptatem itaque quisquam magnam odio, dicta debitis corporis nostrum cum
+      beatae atque laboriosam animi? Dolorem quaerat doloremque perspiciatis hic iste voluptatibus sunt nisi distinctio
+      eius quos cumque fugit facilis sequi aliquid aspernatur eligendi pariatur tempore reprehenderit, doloribus quam
+      error! Praesentium corrupti deleniti velit totam ipsam neque, rerum aperiam possimus eum dolorem, rem earum!
+      Labore, unde ducimus? Assumenda, veniam amet. Earum nesciunt quas quisquam?</p>
+  </div>
+
+  <script>
+    $(document).ready(function () {
+      $("#myButton").click(function () {
+        if (confirm("Are You sure!\nAll Data Will Be Replaced!")) {
+          $("#myParagraph").text("Button clicked! Now You are responsible, This paragraph is changed with your click.");
+        }
+
+
+      });
+    });
+  </script>
+</body>
+
+</html>
