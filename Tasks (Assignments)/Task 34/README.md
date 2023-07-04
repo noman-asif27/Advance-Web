@@ -1,4 +1,4 @@
-# Task No 33
+# Task No 34
 
 Using Array and
 for…each loop
