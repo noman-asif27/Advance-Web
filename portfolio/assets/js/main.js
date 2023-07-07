@@ -311,6 +311,8 @@ window.onload = function() {
 
 const toggle = document.getElementById('toggle');
 const body = document.body;
+const about = document.getElementById('forDark');
+
 
 toggle.addEventListener('input', (e) => {
 	const isChecked = e.target.checked;
@@ -318,7 +320,47 @@ toggle.addEventListener('input', (e) => {
 
 	if(isChecked) {
 		body.classList.add('dark-theme');
+    // about.classList.add('dark-theme');
+    document.querySelector('.header-top').style.background ='rgba(0, 0, 0, 0.9)';
+    document.querySelector('.about-me').style.background ='rgba(0, 0, 0, 0.9)';
+    document.querySelector('.counts').style.background ='rgba(0, 0, 0, 0.9)';
+
+    var countBox = document.querySelectorAll('.count-box');
+    var index = 0, length = countBox.length;
+    for ( ; index < length; index++) {
+      countBox[index].style.background ='rgba(255, 255, 255, 0.08)';
+    }
+
+    var countBoxI = document.querySelectorAll('.count-box i');
+    var index = 0, length = countBoxI.length;
+    for ( ; index < length; index++) {
+      countBoxI[index].style.background ='rgba(255, 255, 255, 0.08)';
+    }
+
+    document.querySelector('.skills').style.background ='rgba(0, 0, 0, 0.9)';
+    document.querySelector('.interests').style.background ='rgba(0, 0, 0, 0.9)';
+
+    
 	} else {
 		body.classList.remove('dark-theme');
+    // about.classList.remove('dark-theme');
+    document.querySelector('.header-top').style.background ='rgba(255, 255, 255, 0.9)';
+    document.querySelector('.about-me').style.background ='rgba(255, 255, 255, 0.9)';  
+    document.querySelector('.counts').style.background ='rgba(255, 255, 255, 0.9)';   
+
+    var countBox = document.querySelectorAll('.count-box');
+    var index = 0, length = countBox.length;
+    for ( ; index < length; index++) {
+      countBox[index].style.background ='rgba(0, 0, 0, 0.08)';
+    }
+
+    var countBoxI = document.querySelectorAll('.count-box i');
+    var index = 0, length = countBoxI.length;
+    for ( ; index < length; index++) {
+      countBoxI[index].style.background ='rgba(0, 0, 0, 0.08)';
+    }
+    
+    document.querySelector('.skills').style.background ='rgba(255, 255, 255, 0.9)';   
+    document.querySelector('.interests').style.background ='rgba(255, 255, 255, 0.9)';   
 	}
 });

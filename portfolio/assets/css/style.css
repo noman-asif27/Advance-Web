@@ -1,7 +1,7 @@
 body {
   font-family: "Open Sans", sans-serif;
-  background-color: #040404;
-  color: #fff;
+  background-color: #fff;
+  color: #000;
   position: relative;
   background: transparent;
 }
@@ -9,7 +9,29 @@ body {
 body::before {
   content: "";
   position: fixed;
-  background: #040404 url("../img/bg.jpg") top right no-repeat;
+  background: #F5F5F5 url("../img/bg\ -white.jpg") top right no-repeat !important;
+  background-size: cover;
+  color: #000 !important;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 100vh;
+  z-index: -1;
+}
+
+.dark-theme {
+  font-family: "Open Sans", sans-serif;
+  background-color: #fff !important;
+  color: #fff !important;
+  position: relative;
+  background: transparent;
+}
+.dark-theme::before {
+  content: "";
+  position: fixed;
+  background: #101010 url("../img/bg.jpg") top right no-repeat !important;
+  background-color: #101010 !important;
+  
   background-size: cover;
   left: 0;
   right: 0;
@@ -17,6 +39,152 @@ body::before {
   height: 100vh;
   z-index: -1;
 }
+
+.dark-theme h2,
+.dark-theme h1,
+.dark-theme span,
+.dark-theme p,
+.dark-theme a,
+.darktheme .content h3,
+.darktheme .content ul li {
+  color: #fff !important;
+}
+
+.toggle input[type="checkbox"] {
+  display: none;
+}
+
+.toggle label {
+  display: block;
+    position: absolute;
+    top: 60%;
+    right: 0;
+    left: -450px;
+    width: 116px;
+    height: 56px;
+    margin: 35px auto;
+    background-color: #77b5fe;
+    border-radius: 56px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    transition: 0.3s ease background-color;
+    overflow: hidden;
+    z-index: 999!important;
+
+}
+#star
+{
+    position: absolute;
+    top: 13px;
+    left: 13px;
+    width: 30px;
+    height: 30px;
+    background-color: #fafd0f;
+    transform: scale(1);
+    border-radius: 50%;
+    transition: 0.3s ease top, 0.3s ease left, 0.3s ease transform, 0.3s ease background-color;
+    z-index: 1;
+}
+
+#star-1
+{
+    position: relative;
+}
+
+#star-2
+{
+    position: absolute;
+    transform: rotateZ(36deg);
+}
+
+.star
+{
+    top: 0;
+    left: -7px;
+    font-size: 54px;
+    line-height: 28px;
+    color: #fafd0f;
+    transition: 0.3s ease color;
+}
+
+#moon
+{
+    position: absolute;
+    bottom: -52px;
+    right: 8px;
+    width: 40px;
+    height: 40px;
+    background-color: #fff;
+    border-radius: 50%;
+    transition: 0.3s ease bottom;
+}
+
+#moon:before
+{
+    content: "";
+    position: absolute;
+    top: -12px;
+    left: -17px;
+    width: 40px;
+    height: 40px;
+    background-color:#03a9f4;
+    border-radius: 50%;
+    transition: 0.3s ease background-color;
+}
+
+#toggle:checked + label
+{
+    background-color: #000;
+}
+
+#toggle:checked + label #star
+{
+    top: 3px;
+    left: 64px;
+    transform: scale(0.3);
+    background-color: yellow;
+}
+
+#toggle:checked + label .star
+{
+    color: yellow;
+}
+
+#toggle:checked + label #moon
+{
+    bottom: 8px;
+}
+
+#toggle:checked + label #moon:before
+{
+    background-color: #000;
+}
+/* 
+.toggle label::after {
+  background-color: #555;
+  border-radius: 50%;
+  content: "";
+  cursor: pointer;
+  display: inline-block;
+  position: absolute;
+  left: 2px;
+  top: 2px;
+  transition: all ease-in-out 0.3s;
+  width: 22px;
+  height: 22px;
+}
+
+.toggle input[type="checkbox"]:checked ~ label {
+  background-color: #00a0fc;
+  border-color: #006dc9;
+}
+
+.toggle input[type="checkbox"]:checked ~ label::after {
+  background-color: #0054b0;
+  transform: translateX(50px);
+} */
+
+
 
 @media (min-width: 1024px) {
   body::before {
@@ -71,7 +239,7 @@ h6 {
 
 #header h1 a,
 #header h1 a:hover {
-  color: #fff;
+  color: #000;
   line-height: 1;
   display: inline-block;
 }
@@ -79,11 +247,11 @@ h6 {
 #header h2 {
   font-size: 24px;
   margin-top: 20px;
-  color: rgba(255, 255, 255, 0.8);
+  color: rgba(0, 0, 0, 0.8);
 }
 
 #header h2 span {
-  color: #fff;
+  color: #000;
   border-bottom: 2px solid #2ecbe9;
   padding-bottom: 6px;
 }
@@ -103,8 +271,8 @@ h6 {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: rgba(255, 255, 255, 0.1);
-  color: #fff;
+  background: rgba(0, 0, 0, 0.1);
+  color: #000;
   line-height: 1;
   margin-right: 8px;
   border-radius: 50%;
@@ -144,7 +312,7 @@ h6 {
   left: 0;
   top: 0;
   right: 0;
-  background: rgba(0, 0, 0, 0.9);
+  background: rgba(255, 255, 255, 0.9);
 }
 
 #header.header-top .social-links,
@@ -217,7 +385,7 @@ h6 {
   font-family: "Poppins", sans-serif;
   font-size: 16px;
   font-weight: 400;
-  color: rgba(255, 255, 255, 0.7);
+  color: rgba(0, 0, 0, 0.7);
   white-space: nowrap;
   transition: 0.3s;
 }
@@ -253,14 +421,14 @@ h6 {
 .navbar .active,
 .navbar .active:focus,
 .navbar li:hover > a {
-  color: #fff;
+  color: #000;
 }
 
 /**
 * Mobile Navigation 
 */
 .mobile-nav-toggle {
-  color: #fff;
+  color: #000;
   font-size: 28px;
   cursor: pointer;
   display: none;
@@ -310,7 +478,7 @@ h6 {
   padding: 10px 0;
   overflow-y: auto;
   transition: 0.3s;
-  border: 2px solid rgba(255, 255, 255, 0.2);
+  border: 2px solid rgba(0, 0, 0, 0.2);
 }
 
 .navbar-mobile li {
@@ -349,7 +517,7 @@ section.section-show {
 }
 
 section .container {
-  background: rgba(0, 0, 0, 0.9);
+  background: rgba(255, 255, 255, 0.9);
   padding: 30px;
 }
 
@@ -371,7 +539,7 @@ section .container {
   margin: 0 0 20px 0;
   letter-spacing: 2px;
   text-transform: uppercase;
-  color: #aaaaaa;
+  color: #000000;
   font-family: "Poppins", sans-serif;
 }
 
@@ -391,7 +559,7 @@ section .container {
   font-weight: 700;
   text-transform: uppercase;
   font-family: "Poppins", sans-serif;
-  color: #fff;
+  color: #000;
 }
 
 /*--------------------------------------------------------------
@@ -441,7 +609,7 @@ section .container {
   width: 100%;
   position: relative;
   text-align: center;
-  background: rgba(255, 255, 255, 0.08);
+  background: rgba(49, 48, 48, 0.08);
 }
 
 .counts .count-box i {
@@ -450,7 +618,7 @@ section .container {
   left: 50%;
   transform: translateX(-50%);
   font-size: 24px;
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(0, 0, 0, 0.1);
   padding: 12px;
   color: #2ecbe9;
   border-radius: 50px;
@@ -461,7 +629,7 @@ section .container {
   font-size: 36px;
   display: block;
   font-weight: 600;
-  color: #fff;
+  color: #000;
 }
 
 .counts .count-box p {
@@ -488,7 +656,7 @@ section .container {
   display: block;
   font-weight: 600;
   font-family: "Poppins", sans-serif;
-  color: #fff;
+  color: #000;
 }
 
 .skills .progress .skill .val {
@@ -497,7 +665,7 @@ section .container {
 }
 
 .skills .progress-bar-wrap {
-  background: rgba(255, 255, 255, 0.2);
+  background: rgba(0, 0, 0, 0.2);
 }
 
 .skills .progress-bar {
@@ -514,7 +682,7 @@ section .container {
   display: flex;
   align-items: center;
   padding: 20px;
-  background: rgba(255, 255, 255, 0.08);
+  background: rgba(0, 0, 0, 0.08);
   transition: ease-in-out 0.3s;
 }
 
@@ -530,11 +698,11 @@ section .container {
   padding: 0;
   line-height: 1;
   font-size: 16px;
-  color: #fff;
+  color: #000;
 }
 
 .interests .icon-box:hover {
-  background: rgba(255, 255, 255, 0.12);
+  background: rgba(0, 0, 0, 0.12);
 }
 
 /*--------------------------------------------------------------
@@ -556,14 +724,14 @@ section .container {
   margin: -40px 0 0 40px;
   position: relative;
   z-index: 2;
-  border: 6px solid rgba(255, 255, 255, 0.12);
+  border: 6px solid rgba(0, 0, 0, 0.12);
 }
 
 .testimonials .testimonial-item h3 {
   font-size: 18px;
   font-weight: bold;
   margin: 10px 0 5px 45px;
-  color: #fff;
+  color:#000;
 }
 
 .testimonials .testimonial-item h4 {
@@ -574,7 +742,7 @@ section .container {
 
 .testimonials .testimonial-item .quote-icon-left,
 .testimonials .testimonial-item .quote-icon-right {
-  color: rgba(255, 255, 255, 0.25);
+  color: rgba(0, 0, 0, 0.25);
   font-size: 26px;
 }
 
@@ -595,7 +763,7 @@ section .container {
   font-style: italic;
   margin: 0 15px 0 15px;
   padding: 20px 20px 60px 20px;
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(0, 0, 0, 0.1);
   position: relative;
   border-radius: 6px;
   position: relative;
@@ -626,13 +794,13 @@ section .container {
   font-weight: 700;
   margin-top: 20px;
   margin-bottom: 20px;
-  color: #fff;
+  color: #000;
 }
 
 .resume .resume-item {
   padding: 0 0 20px 20px;
   margin-top: -2px;
-  border-left: 2px solid rgba(255, 255, 255, 0.2);
+  border-left: 2px solid rgba(0, 0, 0, 0.2);
   position: relative;
 }
 
@@ -648,7 +816,7 @@ section .container {
 
 .resume .resume-item h5 {
   font-size: 16px;
-  background: rgba(255, 255, 255, 0.15);
+  background: rgba(0, 0, 0, 0.15);
   padding: 5px 15px;
   display: inline-block;
   font-weight: 600;
@@ -704,7 +872,7 @@ section .container {
 }
 
 .services .icon-box .icon i {
-  color: #fff;
+  color: #000;
   font-size: 28px;
 }
 
@@ -728,7 +896,7 @@ section .container {
 }
 
 .services .icon-box h4 a {
-  color: #fff;
+  color: #000;
 }
 
 .services .icon-box p {
@@ -756,7 +924,7 @@ section .container {
 
 .services .icon-box:hover h4 a,
 .services .icon-box:hover p {
-  color: #fff;
+  color: #000;
 }
 
 /*--------------------------------------------------------------
@@ -783,7 +951,7 @@ section .container {
   font-weight: 600;
   line-height: 1;
   text-transform: uppercase;
-  color: #fff;
+  color: #000;
   background: rgba(255, 255, 255, 0.1);
   margin: 0 3px 10px 3px;
   transition: all 0.3s ease-in-out;
@@ -844,8 +1012,8 @@ section .container {
   position: absolute;
   top: 35px;
   left: 35px;
-  border-top: 3px solid #fff;
-  border-left: 3px solid #fff;
+  border-top: 3px solid #000;
+  border-left: 3px solid #000;
   transition: all 0.5s ease 0s;
   z-index: 9994;
 }
@@ -858,8 +1026,8 @@ section .container {
   position: absolute;
   bottom: 35px;
   right: 35px;
-  border-bottom: 3px solid #fff;
-  border-right: 3px solid #fff;
+  border-bottom: 3px solid #000;
+  border-right: 3px solid #000;
   transition: all 0.5s ease 0s;
   z-index: 9994;
 }
@@ -922,7 +1090,7 @@ section .container {
 --------------------------------------------------------------*/
 .portfolio-details {
   padding-top: 40px;
-  background: rgba(0, 0, 0, 0.8);
+  background: rgba(255, 255, 255, 0.8);
   position: fixed;
   left: 0;
   right: 0;
@@ -982,7 +1150,7 @@ section .container {
   width: 12px;
   height: 12px;
   opacity: 1;
-  background-color: rgba(255, 255, 255, 0.3);
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
 .portfolio-details .swiper-pagination .swiper-pagination-bullet-active {
@@ -996,7 +1164,7 @@ section .container {
   color: #444444;
   padding: 20px;
   width: 100%;
-  background: rgba(255, 255, 255, 0.08);
+  background: rgba(0, 0, 0, 0.08);
 }
 
 .contact .info-box i.bx {
@@ -1005,19 +1173,19 @@ section .container {
   border-radius: 50%;
   padding: 14px;
   float: left;
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(0, 0, 0, 0.1);
 }
 
 .contact .info-box h3 {
   font-size: 20px;
-  color: rgba(255, 255, 255, 0.5);
+  color: rgba(0, 0, 0, 0.5);
   font-weight: 700;
   margin: 10px 0 8px 68px;
 }
 
 .contact .info-box p {
   padding: 0;
-  color: #fff;
+  color: #000;
   line-height: 24px;
   font-size: 14px;
   margin: 0 0 0 68px;
@@ -1031,7 +1199,7 @@ section .container {
 .contact .info-box .social-links a {
   font-size: 18px;
   display: inline-block;
-  color: #fff;
+  color: #000000;
   line-height: 1;
   margin-right: 12px;
   transition: 0.3s;
@@ -1043,12 +1211,12 @@ section .container {
 
 .contact .php-email-form {
   padding: 30px;
-  background: rgba(255, 255, 255, 0.08);
+  background: rgba(0, 0, 0, 0.08);
 }
 
 .contact .php-email-form .error-message {
   display: none;
-  background: rgba(255, 255, 255, 0.08);
+  background: rgba(0, 0, 0, 0.08);
   background: #ed3c0d;
   text-align: left;
   padding: 15px;
@@ -1061,7 +1229,7 @@ section .container {
 
 .contact .php-email-form .sent-message {
   display: none;
-  background: rgba(255, 255, 255, 0.08);
+  background: rgba(0, 0, 0, 0.08);
   background: #2ecbe9;
   text-align: center;
   padding: 15px;
@@ -1070,7 +1238,7 @@ section .container {
 
 .contact .php-email-form .loading {
   display: none;
-  background: rgba(255, 255, 255, 0.08);
+  background: rgba(0, 0, 0, 0.08);
   text-align: center;
   padding: 15px;
 }
@@ -1092,26 +1260,26 @@ section .container {
   border-radius: 0;
   box-shadow: none;
   font-size: 14px;
-  background: rgba(255, 255, 255, 0.08);
+  background: rgba(0, 0, 0, 0.08);
   border: 0;
   transition: 0.3s;
-  color: #fff;
+  color: #000;
 }
 
 .contact .php-email-form input:focus,
 .contact .php-email-form textarea:focus {
-  background-color: rgba(255, 255, 255, 0.11);
+  background-color: rgba(0, 0, 0, 0.11);
 }
 
 .contact .php-email-form input::-moz-placeholder,
 .contact .php-email-form textarea::-moz-placeholder {
-  color: rgba(255, 255, 255, 0.3);
+  color: rgba(0, 0, 0, 0.3);
   opacity: 1;
 }
 
 .contact .php-email-form input::placeholder,
 .contact .php-email-form textarea::placeholder {
-  color: rgba(255, 255, 255, 0.3);
+  color: rgba(0, 0, 0, 0.3);
   opacity: 1;
 }
 
@@ -1127,7 +1295,7 @@ section .container {
   background: #2ecbe9;
   border: 0;
   padding: 10px 30px;
-  color: #fff;
+  color: #000;
   transition: 0.4s;
   border-radius: 4px;
 }
@@ -1144,88 +1312,4 @@ section .container {
   100% {
     transform: rotate(360deg);
   }
-}
-
-/*--------------------------------------------------------------
-# Credits
---------------------------------------------------------------*/
-.credits {
-  position: fixed;
-  right: 0;
-  left: 0;
-  bottom: 0;
-  padding: 15px;
-  text-align: right;
-  font-size: 13px;
-  color: #fff;
-  z-index: 999999;
-}
-
-@media (max-width: 992px) {
-  .credits {
-    text-align: center;
-    padding: 10px;
-    background: rgba(0, 0, 0, 0.8);
-  }
-}
-
-.credits a {
-  color: #2ecbe9;
-  transition: 0.3s;
-}
-
-.credits a:hover {
-  color: #fff;
-}
-
-
-
-.dark-theme {
-  background: #040404 url("../img/bg\ -white.jpg") top right no-repeat !important;
-	background-color: #fff!important;
-  color: #000!important;
-}
-
- .dark-theme h2, .dark-theme p {
-	color: #000!important;
-} 
-
-.toggle input[type=checkbox] {
-	display: none;
-}
-
-.toggle label {
-	background-color: #777;
-	border: 2px solid #555;
-	border-radius: 50px;
-	cursor: pointer;
-	display: inline-block;
-	position: relative;
-	transition: all ease-in-out 0.3s;
-	width: 100px;
-	height: 50px;
-}
-
-.toggle label::after {
-	background-color: #555;
-	border-radius: 50%;
-	content: ' ';
-	cursor: pointer;
-	display: inline-block;
-	position: absolute;
-	left: 2px;
-	top: 2px;
-	transition: all ease-in-out 0.3s;
-	width: 42px;
-	height: 42px;
-}
-
-.toggle input[type=checkbox]:checked ~ label {
-	background-color: #00a0fc;
-	border-color: #006dc9;
-}
-
-.toggle input[type=checkbox]:checked ~ label::after {
-	background-color: #0054B0;
-	transform: translateX(50px);
 }

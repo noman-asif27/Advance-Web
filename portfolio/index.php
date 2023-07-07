@@ -30,8 +30,14 @@
 
 <body>
   <div class="toggle">
-    <input type="checkbox" id="toggle" />
-    <label for="toggle"></label>
+    <input type="checkbox" id="toggle"/>
+    <label for="toggle">
+    <div id="star">
+    <div class="star" id="star-1">★</div>
+    <div class="star" id="star-2">★</div>
+  </div>
+  <div id="moon"></div>
+    </label>
   </div>
   <!-- ======= Header ======= -->
   <header id="header">
@@ -68,7 +74,7 @@
   <section id="about" class="about">
 
     <!-- ======= About Me ======= -->
-    <div class="about-me container">
+    <div id="forDark"class="about-me container">
 
       <div class="section-title">
         <h2>About</h2>
