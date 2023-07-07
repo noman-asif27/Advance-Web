@@ -43,7 +43,7 @@
       <!-- Uncomment below if you prefer to use an image logo -->
       <!-- <a href="index.html" class="mr-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a> -->
       <h2>I'm Expert In <span class="txt-rotate" data-period="2000"
-          data-rotate='[ "PHP.", "React Js.", "Node Js.", "Mongodb","My SQL"]'></span> </h2>
+          data-rotate='[ "Freealancing","PHP.", "React Js.", "Node Js.", "Mongodb","My SQL"]'></span> </h2>
 
       <nav id="navbar" class="navbar">
         <ul>
@@ -525,9 +525,9 @@
         <div class="col-lg-12 d-flex justify-content-center">
           <ul id="portfolio-flters">
             <li data-filter="*" class="filter-active">All</li>
-            <li data-filter=".filter-app">App</li>
-            <li data-filter=".filter-card">Card</li>
-            <li data-filter=".filter-web">Web</li>
+            <li data-filter=".filter-app">PHP</li>
+            <li data-filter=".filter-card">React</li>
+            <li data-filter=".filter-web">Mern</li>
           </ul>
         </div>
       </div>
@@ -538,12 +538,12 @@
           <div class="portfolio-wrap">
             <img src="assets/img/portfolio/portfolio-1.jpg" class="img-fluid" alt="">
             <div class="portfolio-info">
-              <h4>App 1</h4>
-              <p>App</p>
+              <h4>How to get 1000 result of places detail from google place API and export to excel using PHP</h4>
+              <p>PHP</p>
               <div class="portfolio-links">
                 <a href="assets/img/portfolio/portfolio-1.jpg" data-gallery="portfolioGallery"
-                  class="portfolio-lightbox" title="App 1"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external"
+                  class="portfolio-lightbox" title="How to get 1000 result of places detail from google place API and export to excel using PHP"><i class="bx bx-plus"></i></a>
+                <a href="phpTask.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external"
                   class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-link"></i></a>
               </div>
             </div>
