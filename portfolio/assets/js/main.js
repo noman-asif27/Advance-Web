@@ -339,8 +339,48 @@ toggle.addEventListener('input', (e) => {
 
     document.querySelector('.skills').style.background ='rgba(0, 0, 0, 0.9)';
     document.querySelector('.interests').style.background ='rgba(0, 0, 0, 0.9)';
-
     
+    var IconBox = document.querySelectorAll('.icon-box');
+    var index = 0, length = IconBox.length;
+    for ( ; index < length; index++) {
+      IconBox[index].style.background ='rgba(255, 255, 255, 0.08)';
+    }
+    
+    var iconBoxI = document.querySelectorAll('.icon-box h3');
+    var index = 0, length = iconBoxI.length;
+    for ( ; index < length; index++) {
+      iconBoxI[index].style.color ='#fff';
+    }
+
+
+    document.querySelector('.testimonials').style.background ='rgba(0, 0, 0, 0.9)';
+
+    var testiBoxBoxI = document.querySelectorAll('.testimonial-item h3');
+    var index = 0, length = testiBoxBoxI.length;
+    for ( ; index < length; index++) {
+      testiBoxBoxI[index].style.color ='#fff';
+    }
+
+    document.querySelector('.my-resume').style.background ='rgba(0, 0, 0, 0.9)';
+    document.querySelector('.my-services').style.background ='rgba(0, 0, 0, 0.9)';
+    document.querySelector('.my-work').style.background ='rgba(0, 0, 0, 0.9)';
+    document.querySelector('.my-contact').style.background ='rgba(0, 0, 0, 0.9)';
+
+
+    var InfoBox = document.querySelectorAll('.info-box');
+    var index = 0, length = InfoBox.length;
+    for ( ; index < length; index++) {
+      InfoBox[index].style.background ='rgba(255, 255, 255, 0.08)';
+    }
+    
+    var InfoBoxI = document.querySelectorAll('.info-box h3');
+    var index = 0, length = InfoBoxI.length;
+    for ( ; index < length; index++) {
+      InfoBoxI[index].style.color ='#fff';
+    }
+
+    document.querySelector('.php-email-form').style.background ='rgba(255, 255, 255, 0.08)';
+
 	} else {
 		body.classList.remove('dark-theme');
     // about.classList.remove('dark-theme');
@@ -362,5 +402,43 @@ toggle.addEventListener('input', (e) => {
     
     document.querySelector('.skills').style.background ='rgba(255, 255, 255, 0.9)';   
     document.querySelector('.interests').style.background ='rgba(255, 255, 255, 0.9)';   
-	}
-});
+
+    var IconBox = document.querySelectorAll('.icon-box');
+    var index = 0, length = IconBox.length;
+    for ( ; index < length; index++) {
+      IconBox[index].style.background ='rgba(0, 0, 0, 0.08)';
+    }
+    
+    var iconBoxI = document.querySelectorAll('.icon-box h3');
+    var index = 0, length = iconBoxI.length;
+    for ( ; index < length; index++) {
+      iconBoxI[index].style.color ='#000';
+    }
+
+    document.querySelector('.testimonials').style.background ='rgba(255, 255, 255, 0.9)';   
+
+    var testiBoxBoxI = document.querySelectorAll('.testimonial-item h3');
+    var index = 0, length = testiBoxBoxI.length;
+    for ( ; index < length; index++) {
+      testiBoxBoxI[index].style.color ='#000';
+    }
+    
+    document.querySelector('.my-resume').style.background ='rgba(255, 255, 255, 0.9)';
+    document.querySelector('.my-services').style.background ='rgba(255, 255, 255, 0.9)';
+    document.querySelector('.my-work').style.background ='rgba(255, 255, 255, 0.9)';
+    document.querySelector('.my-contact').style.background ='rgba(255, 255, 255, 0.9)';
+
+    var InfoBox = document.querySelectorAll('.info-box');
+    var index = 0, length = InfoBox.length;
+    for ( ; index < length; index++) {
+      InfoBox[index].style.background ='rgba(0, 0, 0, 0.08)';
+    }
+
+    var InfoBoxI = document.querySelectorAll('.info-box h3');
+    var index = 0, length = InfoBoxI.length;
+    for ( ; index < length; index++) {
+      InfoBoxI[index].style.color ='#000';
+    }
+
+    document.querySelector('.php-email-form').style.background ='rgba(0, 0, 0, 0.08)';
+	}});

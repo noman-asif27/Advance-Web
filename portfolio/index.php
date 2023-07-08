@@ -13,7 +13,9 @@
   <link href="./assets/img/favicon.png" rel="icon">
 
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="./assets/libraries/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -29,16 +31,7 @@
 </head>
 
 <body>
-  <div class="toggle">
-    <input type="checkbox" id="toggle"/>
-    <label for="toggle">
-    <div id="star">
-    <div class="star" id="star-1">★</div>
-    <div class="star" id="star-2">★</div>
-  </div>
-  <div id="moon"></div>
-    </label>
-  </div>
+
   <!-- ======= Header ======= -->
   <header id="header">
     <div class="container">
@@ -46,7 +39,8 @@
       <h1><a href="./index.php">Noman Asif</a></h1>
       <!-- Uncomment below if you prefer to use an image logo -->
       <!-- <a href="index.html" class="mr-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a> -->
-      <h2>I'm Expert In <span class="txt-rotate" data-period="2000" data-rotate='[ "Freealancing","PHP.", "React Js.", "Node Js.", "Mongodb","My SQL"]'></span> </h2>
+      <h2>I'm Expert In <span class="txt-rotate" data-period="2000"
+          data-rotate='[ "Freealancing","PHP.", "React Js.", "Node Js.", "Mongodb","My SQL"]'></span> </h2>
 
       <nav id="navbar" class="navbar">
         <ul>
@@ -56,15 +50,27 @@
           <li><a class="nav-link" href="#services">Services</a></li>
           <li><a class="nav-link" href="#portfolio">Portfolio</a></li>
           <li><a class="nav-link" href="#contact">Contact</a></li>
+          <li>
+            <div class="toggle">
+              <input type="checkbox" id="toggle" />
+              <label for="toggle">
+                <div id="star">
+                  <div class="star" id="star-1">★</div>
+                  <div class="star" id="star-2">★</div>
+                </div>
+                <div id="moon"></div>
+              </label>
+            </div>
+          </li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
 
       <div class="social-links">
-        <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
-        <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-        <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-        <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+        <a href="https://www.facebook.com/webdeveloper27" class="facebook"><i class="text-primary bi bi-facebook"></i></a>
+        <a href="https://www.fiverr.com/pro_nauman" class="instagram"><i class="bi bi-fiverr"><img height="18" src="https://cutewallpaper.org/24/fiverr-logo-png/fiverr-logo-logos-icon-free-download-on-iconfinder.png" alt="fiverr"></i></a>
+        <a href="https://www.linkedin.com/in/noman-asif-6b0426213/" class="linkedin"><i class="text-primary bi bi-linkedin"></i></a>
+        <a href="https://wa.me/923224895195" class="whatsapp"><i class=" text-success bi bi-whatsapp"></i></a>
       </div>
 
     </div>
@@ -74,7 +80,7 @@
   <section id="about" class="about">
 
     <!-- ======= About Me ======= -->
-    <div id="forDark"class="about-me container">
+    <div id="forDark" class="about-me container">
 
       <div class="section-title">
         <h2>About</h2>
@@ -143,7 +149,8 @@
         <div class="col-lg-3 col-md-6">
           <div class="count-box">
             <i class="bi bi-emoji-smile"></i>
-            <span data-purecounter-start="0" data-purecounter-end="90" data-purecounter-duration="1" class="purecounter"></span>
+            <span data-purecounter-start="0" data-purecounter-end="90" data-purecounter-duration="1"
+              class="purecounter"></span>
             <p>Happy Clients</p>
           </div>
         </div>
@@ -151,7 +158,8 @@
         <div class="col-lg-3 col-md-6 mt-5 mt-md-0">
           <div class="count-box">
             <i class="bi bi-journal-richtext"></i>
-            <span data-purecounter-start="0" data-purecounter-end="10" data-purecounter-duration="1" class="purecounter"></span>
+            <span data-purecounter-start="0" data-purecounter-end="10" data-purecounter-duration="1"
+              class="purecounter"></span>
             <p>Projects</p>
           </div>
         </div>
@@ -159,7 +167,8 @@
         <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
           <div class="count-box">
             <i class="bi bi-headset"></i>
-            <span data-purecounter-start="0" data-purecounter-end="820" data-purecounter-duration="1" class="purecounter"></span>
+            <span data-purecounter-start="0" data-purecounter-end="820" data-purecounter-duration="1"
+              class="purecounter"></span>
             <p>Hours Of Support</p>
           </div>
         </div>
@@ -167,7 +176,8 @@
         <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
           <div class="count-box">
             <i class="bi bi-award"></i>
-            <span data-purecounter-start="0" data-purecounter-end="2" data-purecounter-duration="1" class="purecounter"></span>
+            <span data-purecounter-start="0" data-purecounter-end="2" data-purecounter-duration="1"
+              class="purecounter"></span>
             <p>Awards</p>
           </div>
         </div>
@@ -311,7 +321,8 @@
                 Excellent service with great communication from Nauman's end! Very helpful and willing to teach things I
                 don't understand. <i class="bx bxs-quote-alt-right quote-icon-right"></i>
               </p>
-              <img src="https://pbs.twimg.com/profile_images/878750445380009984/u6SUUvH0_400x400.jpg" class="testimonial-img" alt="">
+              <img src="https://pbs.twimg.com/profile_images/878750445380009984/u6SUUvH0_400x400.jpg"
+                class="testimonial-img" alt="">
               <h3>cryptomoonz99</h3>
               <h4>Italy</h4>
             </div>
@@ -329,7 +340,9 @@
                 timezone. I would thoroughly recommend working with Noman in the future!
                 <i class="bx bxs-quote-alt-right quote-icon-right"></i>
               </p>
-              <img src="https://media.licdn.com/dms/image/C5103AQGYf09WOj9upw/profile-displayphoto-shrink_800_800/0/1517403505704?e=2147483647&v=beta&t=IxB4RDk0wV_cFGJNfs81bpBNMsGZUm4ze_QNn7-ztr4" class="testimonial-img" alt="">
+              <img
+                src="https://media.licdn.com/dms/image/C5103AQGYf09WOj9upw/profile-displayphoto-shrink_800_800/0/1517403505704?e=2147483647&v=beta&t=IxB4RDk0wV_cFGJNfs81bpBNMsGZUm4ze_QNn7-ztr4"
+                class="testimonial-img" alt="">
               <h3>rhyscomissiong</h3>
               <h4>United Kingdom</h4>
             </div>
@@ -343,7 +356,9 @@
                 job.
                 <i class="bx bxs-quote-alt-right quote-icon-right"></i>
               </p>
-              <img src="https://fiverr-res.cloudinary.com/image/upload/f_auto,q_auto,t_profile_small/v1/attachments/profile/photo/62193a7ca7ca998db5fdbd9c34e4b0b6-1666539712766/3d1a5594-35cc-473d-affa-02f5bfd77a8d.jpg" class="testimonial-img" alt="">
+              <img
+                src="https://fiverr-res.cloudinary.com/image/upload/f_auto,q_auto,t_profile_small/v1/attachments/profile/photo/62193a7ca7ca998db5fdbd9c34e4b0b6-1666539712766/3d1a5594-35cc-473d-affa-02f5bfd77a8d.jpg"
+                class="testimonial-img" alt="">
               <h3>ahmedsvensson</h3>
               <h4>Sweden</h4>
             </div>
@@ -356,7 +371,9 @@
                 Fast, skilled and super friendly. Thanks once again for your amazing service.
                 <i class="bx bxs-quote-alt-right quote-icon-right"></i>
               </p>
-              <img src="https://fiverr-res.cloudinary.com/image/upload/f_auto,q_auto,t_profile_small/v1/attachments/profile/photo/aa2569d43569e1dfbb5f60b962e12b9d-1627419239956/a1f8a142-5131-4091-89c0-768ad8e1a7d2.jpg" class="testimonial-img" alt="">
+              <img
+                src="https://fiverr-res.cloudinary.com/image/upload/f_auto,q_auto,t_profile_small/v1/attachments/profile/photo/aa2569d43569e1dfbb5f60b962e12b9d-1627419239956/a1f8a142-5131-4091-89c0-768ad8e1a7d2.jpg"
+                class="testimonial-img" alt="">
               <h3>brianbusiness_</h3>
               <h4>Netherlands</h4>
             </div>
@@ -366,9 +383,12 @@
             <div class="testimonial-item">
               <p>
                 <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                very good work, very friendly and got the job done <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                very good work, very friendly and got the job done <i
+                  class="bx bxs-quote-alt-right quote-icon-right"></i>
               </p>
-              <img src="https://fiverr-res.cloudinary.com/image/upload/f_auto,q_auto,t_profile_small/v1/profile/photos/507704/original/me_in_a_tux.jpg" class="testimonial-img" alt="">
+              <img
+                src="https://fiverr-res.cloudinary.com/image/upload/f_auto,q_auto,t_profile_small/v1/profile/photos/507704/original/me_in_a_tux.jpg"
+                class="testimonial-img" alt="">
               <h3>milliondollarp</h3>
               <h4>United States</h4>
             </div>
@@ -390,7 +410,7 @@
 
   <!-- ======= Resume Section ======= -->
   <section id="resume" class="resume">
-    <div class="container">
+    <div class="my-resume container">
 
       <div class="section-title">
         <h2>Resume</h2>
@@ -459,7 +479,7 @@
 
   <!-- ======= Services Section ======= -->
   <section id="services" class="services">
-    <div class="container">
+    <div class="container my-services">
 
       <div class="section-title">
         <h2>Services</h2>
@@ -503,7 +523,7 @@
 
   <!-- ======= Portfolio Section ======= -->
   <section id="portfolio" class="portfolio">
-    <div class="container">
+    <div class="container my-work">
 
       <div class="section-title">
         <h2>Portfolio</h2>
@@ -516,7 +536,7 @@
             <li data-filter="*" class="filter-active">All</li>
             <li data-filter=".filter-php">PHP</li>
             <li data-filter=".filter-react">React</li>
-            
+
           </ul>
         </div>
       </div>
@@ -530,8 +550,12 @@
               <h4>How to get 1000 result of places detail from google place API and export to excel using PHP</h4>
               <p>PHP</p>
               <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="How to get 1000 result of places detail from google place API and export to excel using PHP"><i class="bx bx-plus"></i></a>
-                <a href="phpTask.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external" class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                <a href="assets/img/portfolio/portfolio-1.jpg" data-gallery="portfolioGallery"
+                  class="portfolio-lightbox"
+                  title="How to get 1000 result of places detail from google place API and export to excel using PHP"><i
+                    class="bx bx-plus"></i></a>
+                <a href="phpTask.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external"
+                  class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-link"></i></a>
               </div>
             </div>
           </div>
@@ -544,8 +568,10 @@
               <h4>eStore webste (eCommerce) of a brand Vetidos By HH</h4>
               <p>PHP</p>
               <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-2.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
-                <a href="phpTask2.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external" class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                <a href="assets/img/portfolio/portfolio-2.jpg" data-gallery="portfolioGallery"
+                  class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
+                <a href="phpTask2.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external"
+                  class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-link"></i></a>
               </div>
             </div>
           </div>
@@ -558,8 +584,10 @@
               <h4>Resume Generator with Admin Panel using React JS, MongoDb, Node JS, Expres</h4>
               <p>React JS, Node Js</p>
               <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-3.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 2"><i class="bx bx-plus"></i></a>
-                <a href="reactTask.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external" class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                <a href="assets/img/portfolio/portfolio-3.jpg" data-gallery="portfolioGallery"
+                  class="portfolio-lightbox" title="App 2"><i class="bx bx-plus"></i></a>
+                <a href="reactTask.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external"
+                  class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-link"></i></a>
               </div>
             </div>
           </div>
@@ -572,8 +600,10 @@
               <h4>Secure Admin Dashboard in Material UI, Datagrid in Mern (MongoDB Express React Js Node Js)</h4>
               <p>Mern Stack</p>
               <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-4.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 2"><i class="bx bx-plus"></i></a>
-                <a href="reactTask2.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external" class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                <a href="assets/img/portfolio/portfolio-4.jpg" data-gallery="portfolioGallery"
+                  class="portfolio-lightbox" title="Card 2"><i class="bx bx-plus"></i></a>
+                <a href="reactTask2.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external"
+                  class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-link"></i></a>
               </div>
             </div>
           </div>
@@ -586,14 +616,16 @@
               <h4>IBM Text to Spech API In Mern Stack (MongoDb, React, Express, Node Js)</h4>
               <p>Mern Stack</p>
               <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-4.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 2"><i class="bx bx-plus"></i></a>
-                <a href="reactTask2.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external" class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                <a href="assets/img/portfolio/portfolio-4.jpg" data-gallery="portfolioGallery"
+                  class="portfolio-lightbox" title="Card 2"><i class="bx bx-plus"></i></a>
+                <a href="reactTask2.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external"
+                  class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-link"></i></a>
               </div>
             </div>
           </div>
         </div>
 
-        
+
       </div>
 
     </div>
@@ -601,7 +633,7 @@
 
   <!-- ======= Contact Section ======= -->
   <section id="contact" class="contact">
-    <div class="container">
+    <div class="container my-contact">
 
       <div class="section-title">
         <h2>Contact</h2>
@@ -623,12 +655,10 @@
             <i class="bx bx-share-alt"></i>
             <h3>Social Profiles</h3>
             <div class="social-links">
-
-              <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-              <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
-              <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-              <a href="#" class="google-plus"><i class="bi bi-skype"></i></a>
-              <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+            <a href="https://www.facebook.com/webdeveloper27" class="facebook"><i class="text-primary bi bi-facebook"></i></a>
+        <a href="https://www.fiverr.com/pro_nauman" class="instagram"><i class="bi bi-fiverr"><img height="18" src="https://cutewallpaper.org/24/fiverr-logo-png/fiverr-logo-logos-icon-free-download-on-iconfinder.png" alt="fiverr"></i></a>
+        <a href="https://www.linkedin.com/in/noman-asif-6b0426213/" class="linkedin"><i class="text-primary bi bi-linkedin"></i></a>
+        <a href="https://wa.me/923224895195" class="whatsapp"><i class="text-success bi bi-whatsapp"></i></a>
             </div>
           </div>
         </div>

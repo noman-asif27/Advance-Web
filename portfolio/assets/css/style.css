@@ -55,14 +55,14 @@ body::before {
 }
 
 .toggle label {
-  display: block;
+  /* display: block; */
     position: absolute;
-    top: 60%;
+     /*top: 60%;
     right: 0;
-    left: -450px;
+    left: -450px; */
     width: 116px;
     height: 56px;
-    margin: 35px auto;
+    /* margin: 35px auto; */
     background-color: #77b5fe;
     border-radius: 56px;
     transform: translateY(-50%);
@@ -280,9 +280,9 @@ h6 {
   height: 40px;
 }
 
-#header .social-links a:hover {
+/* #header .social-links a:hover {
   background: #2ecbe9;
-}
+} */
 
 @media (max-width: 992px) {
   #header h1 {
@@ -714,7 +714,7 @@ section .container {
 }
 
 .testimonials .testimonial-item {
-  box-sizing: content-box;
+  box-sizing:content-box;
   min-height: 320px;
 }
 
@@ -1273,13 +1273,13 @@ section .container {
 
 .contact .php-email-form input::-moz-placeholder,
 .contact .php-email-form textarea::-moz-placeholder {
-  color: rgba(0, 0, 0, 0.3);
+  color: rgb(255, 255, 255);
   opacity: 1;
 }
 
 .contact .php-email-form input::placeholder,
 .contact .php-email-form textarea::placeholder {
-  color: rgba(0, 0, 0, 0.3);
+  color: rgb(255, 255, 255);
   opacity: 1;
 }
 
