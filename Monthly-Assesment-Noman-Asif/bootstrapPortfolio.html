@@ -3,13 +3,19 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Bootstrap Portfolio</title>
+    <title>Monthly Assesment Portfolio</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i|Playfair+Display:400,400i,500,500i,600,600i,700,700i&subset=cyrillic">
+    
+
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css" integrity="sha384-b6lVK+yci+bfDmaY1u0zE8YYJt0TZxLEAFyYSLHId4xoVvsrQu3INevFKo+Xir8e" crossorigin="anonymous">
+
     <style>
       #carouselExampleCaptions .carousel-item img {
         object-fit: cover;
@@ -20,61 +26,80 @@
         /* width: 100%; */
       }
 
-      .carousel-control-prev, .carousel-control-next{
-        top: 270px!important;
-        display: none!important;
+      .carousel-control-prev,
+      .carousel-control-next {
+        top: 270px !important;
+        display: none !important;
       }
-      .carousel-control-prev{
-      left: 1100px!important;
+      .carousel-control-prev {
+        left: 1100px !important;
       }
 
-      .carousel-indicators{
+      .carousel-indicators {
         /* border-radius: 50%!important; */
-        display: flex!important;
-        flex-direction: column!important;
-        left: 1050px!important;
+        display: flex !important;
+        flex-direction: column !important;
+        left: 1050px !important;
         top: 150px;
       }
 
-      .carousel-indicators>button{
-          width: 20px!important;
-          height:20px!important;
-          border-radius: 50%;
+      .carousel-indicators > button {
+        width: 20px !important;
+        height: 20px !important;
+        border-radius: 50%;
       }
-      .pagination ul li{
-        border-radius: 50%!important;
+      .pagination ul li {
+        border-radius: 50% !important;
       }
-      .scrollTOp{
+      .scrollTOp {
         position: fixed;
         right: 0;
         bottom: 10px;
         border-radius: 50%;
-z-index: 999;
+        z-index: 999;
       }
 
-      .carousel-caption{
-        color: white!important;
+      .carousel-caption {
+        color: white !important;
       }
+
+      .about .image {
+    background: url('https://pronauman.codetechies.com/assets/img/img.png') center center no-repeat;
+    background-size: cover;
+    min-height: 400px;
+    filter: drop-shadow(8px 8px 10px gray);
+}
+
+.about .content .count-box span{
+  font-size: 36px;
+  line-height: 20px;
+  display: block;
+  font-weight: 700;
+  color: #2c4964;
+  margin-left: 50px;
+  font-family: "Playfair Display", serif;
+
+}
       @media only screen and (max-width: 600px) {
-.mobile-resp{
-  display: flex!important;
-  flex-direction: row-reverse!important;
-}
-.carousel-control-prev{
-      left: 0px!important;
-      }
+        .mobile-resp {
+          display: flex !important;
+          flex-direction: row-reverse !important;
+        }
+        .carousel-control-prev {
+          left: 0px !important;
+        }
 
-      .carousel-control-next{
-      left: 50px!important;
-      }
+        .carousel-control-next {
+          left: 50px !important;
+        }
 
-      .carousel-indicators{
-        /* border-radius: 50%!important; */
-        display: flex!important;
-        flex-direction: column!important;
-        left: 0px!important;
+        .carousel-indicators {
+          /* border-radius: 50%!important; */
+          display: flex !important;
+          flex-direction: column !important;
+          left: 0px !important;
+        }
       }
-}
     </style>
   </head>
   <body>
@@ -201,6 +226,96 @@ z-index: 999;
       </button>
     </div>
 
+    <section id="about" class="about">
+      <div class="container">
+        <div class="row no-gutters">
+          <div
+            class="image col-xl-5 d-flex align-items-stretch justify-content-center justify-content-lg-start"
+          ></div>
+          <div class="col-xl-7 ps-0 ps-lg-5 pe-lg-1 d-flex align-items-stretch">
+            <div class="content d-flex flex-column justify-content-center">
+              <h3>Voluptatem dignissimos provident quasi</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis
+                aute irure dolor in reprehenderit
+              </p>
+              <div class="row">
+                <div class="col-md-6 d-md-flex align-items-md-stretch">
+                  <div class="count-box">
+                    <i class="bi bi-emoji-smile text-primary h4"></i>
+                    <span
+                      data-purecounter-start="0"
+                      data-purecounter-end="65"
+                      data-purecounter-duration="0"
+                      class="purecounter h4"
+                      >65</span
+                    >
+                    <p>
+                      <strong>Happy Clients</strong> consequuntur voluptas
+                      nostrum aliquid ipsam architecto ut.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="col-md-6 d-md-flex align-items-md-stretch">
+                  <div class="count-box">
+                    <i class="bi bi-journal-richtext text-primary h4"></i>
+                    <span
+                      data-purecounter-start="0"
+                      data-purecounter-end="85"
+                      data-purecounter-duration="0"
+                      class="purecounter h4"
+                      >85</span
+                    >
+                    <p>
+                      <strong>Projects</strong> adipisci atque cum quia
+                      aspernatur totam laudantium et quia dere tan
+                    </p>
+                  </div>
+                </div>
+
+                <div class="col-md-6 d-md-flex align-items-md-stretch">
+                  <div class="count-box">
+                    <i class="bi bi-clock text-primary h4"></i>
+                    <span
+                      data-purecounter-start="0"
+                      data-purecounter-end="12"
+                      data-purecounter-duration="0"
+                      class="purecounter h4"
+                      >12</span
+                    >
+                    <p>
+                      <strong>Years of experience</strong> aut commodi quaerat
+                      modi aliquam nam ducimus aut voluptate non vel
+                    </p>
+                  </div>
+                </div>
+
+                <div class="col-md-6 d-md-flex align-items-md-stretch">
+                  <div class="count-box">
+                    <i class="bi bi-award text-primary h4"></i>
+                    <span
+                      data-purecounter-start="0"
+                      data-purecounter-end="15"
+                      data-purecounter-duration="0"
+                      class="purecounter h4"
+                      >15</span
+                    >
+                    <p>
+                      <strong>Awards</strong> rerum asperiores dolor alias quo
+                      reprehenderit eum et nemo pad der
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- End .content-->
+          </div>
+        </div>
+      </div>
+    </section>
+
     <section id="about" class="mt-5">
       <div class="container">
         <div class="row">
@@ -226,7 +341,6 @@ z-index: 999;
             </p>
           </div>
 
-
           <div class="col-sm-2">
             <h2>Service 3</h2>
             <p>Some Text</p>
@@ -245,41 +359,58 @@ z-index: 999;
         <div class="row text-center">
           <div class="col-sm-12">
             <div class="row justify-content-around">
-              
-              <div class="card" style="width: 18rem;">
-                <img class="card-img-top" src="https://source.unsplash.com/random/250×250/?laravel" alt="Card image cap">
+              <div class="card" style="width: 18rem">
+                <img
+                  class="card-img-top"
+                  src="https://source.unsplash.com/random/250×250/?laravel"
+                  alt="Card image cap"
+                />
                 <div class="card-body">
                   <h5 class="card-title">Card title 1</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
                   <a href="#" class="btn btn-primary">Go somewhere</a>
                 </div>
               </div>
 
-              <div class="card" style="width: 18rem;">
-                <img class="card-img-top" src="https://source.unsplash.com/random/250×250/?laravel" alt="Card image cap">
+              <div class="card" style="width: 18rem">
+                <img
+                  class="card-img-top"
+                  src="https://source.unsplash.com/random/250×250/?laravel"
+                  alt="Card image cap"
+                />
                 <div class="card-body">
                   <h5 class="card-title">Card title 2</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
                   <a href="#" class="btn btn-primary">Go somewhere</a>
                 </div>
               </div>
 
-
-              <div class="card" style="width: 18rem;">
-                <img class="card-img-top" src="https://source.unsplash.com/random/250×250/?laravel" alt="Card image cap">
+              <div class="card" style="width: 18rem">
+                <img
+                  class="card-img-top"
+                  src="https://source.unsplash.com/random/250×250/?laravel"
+                  alt="Card image cap"
+                />
                 <div class="card-body">
                   <h5 class="card-title">Card title 3</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
                   <a href="#" class="btn btn-primary">Go somewhere</a>
                 </div>
               </div>
-              
             </div>
           </div>
         </div>
       </div>
     </section>
-
 
     <footer id="sticky-footer" class="flex-shrink-0 py-4 bg-dark text-white-50">
       <div class="row">
@@ -289,8 +420,12 @@ z-index: 999;
         <div class="col-sm-3">
           <h4>Newsletter</h4>
           <form>
-            <input class="form-control" type="text" placeholder="Enter Your Email">
-            <input type="submit" value="Subscibe Now" class="btn btn-primary ">
+            <input
+              class="form-control"
+              type="text"
+              placeholder="Enter Your Email"
+            />
+            <input type="submit" value="Subscibe Now" class="btn btn-primary" />
           </form>
         </div>
       </div>
@@ -299,14 +434,17 @@ z-index: 999;
       </div>
     </footer>
 
-    
-<script>
-  function ScrollTop(){
-    window.scroll(0,0);
-  }
-  
+    <script>
+      function ScrollTop() {
+        window.scroll(0, 0);
+      }
+    </script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
 
-</script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
