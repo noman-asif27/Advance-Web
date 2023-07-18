@@ -92,18 +92,18 @@ loop:
       if(isset($_POST["dse"])){
         // echo $_POST['dse'];
        
-        $row = 1;
-        $maxRows = $_POST['dse'];
+          $row = 1;
+          $maxRows = $_POST['dse'];
 
-        while ($row <= $maxRows) {
-          $col = 1;
-          while ($col <= $row) {
-              echo '*' ;
-              $col++ ;
-          }
-          echo "<br>";
-          $row++;
-      }
+          while ($row <= $maxRows) {
+            $col = 1;
+            while ($col <= $row) {
+                echo '*' ;
+                $col++ ;
+            }
+            echo "<br>";
+            $row++;
+        }
 
       //opposite Reverse using Decrement
 //       $row = $_POST["dse"];
